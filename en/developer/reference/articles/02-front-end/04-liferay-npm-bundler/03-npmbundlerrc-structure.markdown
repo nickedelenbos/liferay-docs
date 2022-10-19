@@ -98,7 +98,7 @@ Here's an example of a `.npmbundlerrc` configuration:
       ]
     },
     "packages": {
-        "a-package-name": [
+        "a-package-name": {
         "copy-plugins": ["exclude-imports"],
         "plugins": ["replace-browser-modules"],
         ".babelrc": {
@@ -109,7 +109,7 @@ Here's an example of a `.npmbundlerrc` configuration:
           "inject-imports-dependencies",
           "inject-peer-dependencies"
         ]
-        ],
+        },
         "other-package-name@1.0.10": [
           "copy-plugins": ["exclude-imports"],
           "plugins": ["replace-browser-modules"],
